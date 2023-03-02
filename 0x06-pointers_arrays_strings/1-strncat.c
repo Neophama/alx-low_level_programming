@@ -9,10 +9,10 @@
  * @n: inpu value
  * Return: dest
  */
-char *_strcat(char *dest, char *src, int n)
+char _strncat(char *dest, char *src, int n)
 {
 	int i;
-	imt j;
+	int j;
 
 	i = 0;
 	while (dest[i] != '\0')
