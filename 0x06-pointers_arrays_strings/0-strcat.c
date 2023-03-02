@@ -1,24 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _memset - fills memory with a constant byte
+ * main - check the code for Holberton School students.
  *
- * @s: pointer to memory area to fill
- * @n: the number of bytes to fill
- * @b: constant byte
- *
- * Return: a pointer to the memory area @s
+ * Return: Always 0.
  */
 
-char *_memset(char *s, char b, unsigned int n)
+int main(void)
 
 {
-	unsigned int i;
+    char s1[98] = "Hello ";
+    char s2[] = "World!\n";
+    char *ptr;
 
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-
-	return (s);
+    printf("%s\n", s1);
+    printf("%s", s2);
+    ptr = _strcat(s1, s2);
+    printf("%s", s1);
+    printf("%s", s2);
+    printf("%s", ptr);
+    return (0);
 }
